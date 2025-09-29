@@ -78,9 +78,9 @@ export  class UserPostController {
         //Recaptcha
         const recaptcha = req.body['g-recaptcha-response'];
 
-        if (recaptcha === undefined || recaptcha === '' || recaptcha === null) {
-            return res.status(404).render("signin",{message:"Please select captcha"});
-        }
+        //if (recaptcha === undefined || recaptcha === '' || recaptcha === null) {
+        //    return res.status(404).render("signin",{message:"Please select captcha"});
+        //}
         // const secretKey = process.env.RECAPTCHA_SECRET_KEY;
         // const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${recaptcha}`;
         // const response = await fetch(url, {
